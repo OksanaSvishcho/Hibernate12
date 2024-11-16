@@ -4,8 +4,8 @@
     <file url="file://$PROJECT_DIR$/src/SQL/Client.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/src/SQL/Planet.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/src/SQL/Ticket.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/db.migrations/V1__create_db.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/db.migrations/V2__populate_db.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migrations/V1__create_db.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migrations/V2__populate_db.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>
