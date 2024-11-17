@@ -1,13 +1,19 @@
 package org.example;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "planet")
 public class Planet {
+    @OneToMany(mappedBy = "fromPlanet", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Ticket> ticketsFrom = new ArrayList<>();
+
+    @OneToMany(mappedBy = "toPlanet", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Ticket> ticketsTo = new ArrayList<>();
+
 
     @Id
     @Column(name = "id", nullable = false, unique = true, length = 10)

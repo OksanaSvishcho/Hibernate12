@@ -9,3 +9,5 @@ CREATE TABLE Ticket (
                         FOREIGN KEY (to_planet_id) REFERENCES Planet(id),
                         CHECK (from_planet_id <> to_planet_id)
 );
+
+
